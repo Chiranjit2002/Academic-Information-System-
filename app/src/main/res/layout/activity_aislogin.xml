@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aislogin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg">
+
+
+    <ImageView
+        android:id="@+id/imgID"
+        app:srcCompat="@drawable/ximlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_below="@id/imgID"
+        android:text="Welcome to XIM University\nAcademic Information System"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <!--edit text for user name-->
+    <EditText
+        android:id="@+id/idEdtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:hint="Enter Username"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="textEmailAddress" />
+
+    <!--edit text for user password-->
+    <EditText
+        android:id="@+id/idEdtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtUserName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="textPassword" />
+
+    <!--button to register our new user-->
+    <Button
+        android:id="@+id/idBtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:color="@color/white"
+        android:text="LOGIN"/>
+
+</RelativeLayout>
